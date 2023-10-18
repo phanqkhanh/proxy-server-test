@@ -7,7 +7,7 @@ const app = express()
 
 app.use(bodyParser.json());
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 8080
 
 app.get('/', (req, res) => {
   res.json({ message: 'Hello world!' + process.env.NOTE })
